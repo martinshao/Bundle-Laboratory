@@ -1,0 +1,15 @@
+{
+  "name": "rollup-simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "scripts": {
+    "publish": "rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-json": "^4.0.0"
+  }
+}
