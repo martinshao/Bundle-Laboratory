@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "webpack --mode development"
+    "dev": "webpack --mode development",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
