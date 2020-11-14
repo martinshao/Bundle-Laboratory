@@ -1,3 +1,15 @@
-import _ from 'lodash';
+function getComponent() {
+  return import('lodash')
+    .then(({default: _}) => {
+      const element = document.createElement('div');
 
-console.info(_.join(['Another', 'module', 'lodash!', ' ']));
+      element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+      return element;
+    })
+    .catch((error) => 'An error occurred while loading the component');
+}
+
+getComponent().then((component) => {
+  document.body.appendChild(component);
+});
