@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'shetumodengxiaofangtiregular';
+  src: url('my-font-webfont.woff2') format('woff2'),
+       url('my-font-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hello {
   color: yellowgreen;
+  font-family: 'shetumodengxiaofangtiregular';
+  font-size: xxx-large;
+  background: url(./icon.png);
 }
