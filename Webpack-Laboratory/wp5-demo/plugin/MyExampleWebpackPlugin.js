@@ -17,4 +17,4 @@ class MyExampleWebpackPlugin {
   }
 }
 
-module.exports = MyExampleWebpackPlugin
+module.exports = MyExampleWebpackPlugin;

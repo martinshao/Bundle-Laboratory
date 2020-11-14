@@ -18,7 +18,7 @@ class FileListPlugin {
         },
         size: function () {
           return filelist.length;
-        }
+        },
       };
 
       callback();
