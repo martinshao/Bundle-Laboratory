@@ -244,3 +244,17 @@ webpack 5.4.0 compiled successfully in 2284 ms
 ``` bash
 npm i csv-loader xml-loader -D
 ```
+
+## 资源管理高级
+
+### MiniCssExtractPlugin
+
+``` bash
+npm i mini-css-extract-plugin -D
+```
+
+### HtmlWebpackPlugin
+
+``` bash
+npm i html-webpack-plugin -D
+```

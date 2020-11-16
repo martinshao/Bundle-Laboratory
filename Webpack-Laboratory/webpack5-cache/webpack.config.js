@@ -4,8 +4,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.js',
-    print: './src/print.js',
+    main: './src/index.js',
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -18,6 +17,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   optimization: {
+    moduleIds: 'hashed',
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
