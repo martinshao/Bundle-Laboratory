@@ -16,7 +16,7 @@ function component() {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
-
+  console.info('test change')
   console.info(Data)
   console.info(Notes)
 
