@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open 'Chrome'",
-    "build": "webpack --mode production"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
