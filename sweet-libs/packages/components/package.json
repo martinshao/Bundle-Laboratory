@@ -1,0 +1,13 @@
+{
+  "name": "@sweet/components",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sweet/hooks": "^1.0.0"
+  }
+}
