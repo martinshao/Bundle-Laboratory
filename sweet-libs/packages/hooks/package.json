@@ -3,8 +3,9 @@
   "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "main": "index.ts",
+  "module": "index.ts",
+  "keywords": ["react hooks"],
+  "author": "Martin Shaw",
   "license": "ISC"
 }

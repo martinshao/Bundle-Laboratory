@@ -3,9 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "main": "index.ts",
+  "module": "index.ts",
+  "keywords": ["react components"],
+  "author": "Martin Shaw",
   "license": "ISC",
   "dependencies": {
     "@sweet/hooks": "^1.0.0"
