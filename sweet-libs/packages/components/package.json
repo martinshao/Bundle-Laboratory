@@ -1,14 +1,16 @@
 {
   "name": "@sweet/components",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.ts",
   "module": "index.ts",
-  "keywords": ["react components"],
+  "keywords": [
+    "react components"
+  ],
   "author": "Martin Shaw",
   "license": "ISC",
   "dependencies": {
-    "@sweet/hooks": "^1.0.0"
+    "@sweet/hooks": "^1.0.1"
   }
 }

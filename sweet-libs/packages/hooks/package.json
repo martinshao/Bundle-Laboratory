@@ -1,11 +1,13 @@
 {
   "name": "@sweet/hooks",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.ts",
   "module": "index.ts",
-  "keywords": ["react hooks"],
+  "keywords": [
+    "react hooks"
+  ],
   "author": "Martin Shaw",
   "license": "ISC"
 }
