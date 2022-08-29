@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 要改成es5，不然babel转换es6的时候有些转换不了
+    "declaration": true, // 根据ts文件自动生成.d.ts声明文件和js文件
+    "emitDeclarationOnly": true, // 只输出.d.ts声明文件，不生成js文件
+    "outDir": "./lib", // 输出目录
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "skipLibCheck": true,
+  }
+}
