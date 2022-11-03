@@ -5,21 +5,24 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/index.ts',
+    app: './src/index.tsx',
   },
+  devtool: 'source-map',
   module: {
     rules: [
-      {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
+      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
+      // {
+      //   test: /\.tsx?$/,
+      //   use: 'ts-loader',
+      //   exclude: /node_modules/,
+      // },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: '输出管理',
+      template: './public/index.html'
     }),
   ],
   resolve: {
