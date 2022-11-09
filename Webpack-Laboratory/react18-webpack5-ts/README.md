@@ -151,3 +151,57 @@ pnpm add -D typescript ts-loader
 
 构建成功之后，我们可以添加react相关依赖了。
 
+```
+pnpm add react react-dom
+pnpm add -D @types/react @types/react-dom
+```
+
+构建成功，接下来就是添加样式依赖了。
+
+```
+pnpm add -D style-loader css-loader
+```
+增加webpack配置
+
+``` js
+// ...
+{
+  test: /\.css$/,
+  use: ['style-loader', 'css-loader'],
+},
+// ...
+```
+
+进行构建，完美构建！！！
+
+但是此时的css样式代码是被构建到js代码中去的，此时我们想把这部分代码分离出来。这时候需要一个webpack插件了。
+
+```
+pnpm add -D mini-css-extract-plugin
+```
+修改配置
+
+``` js
+// ...
+{
+  test: /\.(css)$/,
+  use: [MiniCssExtractPlugin.loader, 'css-loader'],
+},
+// ...
+plugins: [new MiniCssExtractPlugin()],
+```
+
+接下来我们想项目要支持 Sass，那么就要单独的配置了。
+
+```
+pnpm add -D sass-loader node-sass
+```
+
+接着是修改配置
+
+``` js
+{
+  test: /\.(s(a|c)ss)$/,
+  use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+},
+```

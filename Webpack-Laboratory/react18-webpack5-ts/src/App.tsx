@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './app.scss';
 
 export default function App() {
   return (
-    <h1>Hello World</h1>
-  )
+    <div className='container'>
+      <div className='header'>
+        <h1>Welcome to React application</h1>
+      </div>
+    </div>
+  );
 }
